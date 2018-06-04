@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingRight="150dp"
+    android:paddingEnd="150dp"
+    android:paddingLeft="2dp"
+    android:paddingStart="2dp"
     android:paddingBottom="200dp"
     android:orientation="vertical" >
 
@@ -15,28 +17,28 @@
         android:layout_weight="1" >
 
         <Button
-            android:layout_width="0dip"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Button"
-            android:textSize="15dp"
-            android:textAllCaps="false"/>
+            android:text="@string/Button"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            style="?attr/buttonBarButtonStyle"/>
 
         <Button
-            android:layout_width="0dip"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Button"
-            android:textSize="15dp"
-            android:textAllCaps="false"/>
+            android:text="@string/Button"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            style="?attr/buttonBarButtonStyle"/>
 
         <Button
-            android:layout_width="0dip"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Button"
-            android:textSize="15dp"
-            android:textAllCaps="false"/>
+            android:text="@string/Button"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+        style="?attr/buttonBarButtonStyle"/>
     </LinearLayout>
 
     <LinearLayout
@@ -44,33 +46,33 @@
         android:layout_height="0dip"
         android:orientation="horizontal"
         android:layout_weight="1"
-        android:text="Button"
-        android:textSize="15dp"
+        android:text="@string/Button"
+        android:textSize="15sp"
         android:textAllCaps="false">
 
         <Button
-            android:layout_width="0dip"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Button"
-            android:textSize="15dp"
-            android:textAllCaps="false"/>
+            android:text="@string/Button"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            style="?attr/buttonBarButtonStyle"/>
 
         <Button
-            android:layout_width="0dip"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Button"
-            android:textSize="15dp"
-            android:textAllCaps="false"/>
+            android:text="@string/Button"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            style="?attr/buttonBarButtonStyle"/>
 
         <Button
-            android:layout_width="0dip"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Button"
-            android:textSize="15dp"
-            android:textAllCaps="false"/>
+            android:text="@string/Button"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            style="?attr/buttonBarButtonStyle"/>
     </LinearLayout>
 
     <LinearLayout
@@ -80,27 +82,27 @@
         android:layout_weight="1" >
 
         <Button
-            android:layout_width="0dip"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Button"
-            android:textSize="15dp"
-            android:textAllCaps="false"/>
+            android:text="@string/Button"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            style="?attr/buttonBarButtonStyle"/>
 
         <Button
-            android:layout_width="0dip"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Button"
-            android:textSize="15dp"
-            android:textAllCaps="false"/>
+            android:text="@string/Button"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            style="?attr/buttonBarButtonStyle"/>
 
         <Button
-            android:layout_width="0dip"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Button"
-            android:textSize="15dp"
-            android:textAllCaps="false"/>
+            android:text="@string/Button"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            style="?attr/buttonBarButtonStyle"/>
     </LinearLayout>
 </LinearLayout>

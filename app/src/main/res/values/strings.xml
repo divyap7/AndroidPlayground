@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">AndroidPlayground</string>
     <string name="Button">Button</string>
-    <string name="Edit_text">EditText</string>
+    <string name="Edit_text">Input</string>
     <string name="Text_view">TextView</string>
     <string name="Image_view">ImageView</string>
 </resources>

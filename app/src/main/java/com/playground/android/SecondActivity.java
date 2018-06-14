@@ -1,8 +1,10 @@
 package com.playground.android;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -12,6 +14,11 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+        TextView textView=findViewById(R.id.textView3);
+        Intent intent = getIntent();
+        String text= intent.getExtras().getString("Text");
+        textView.setText(text);
+
     }
 
     public void onStart() {

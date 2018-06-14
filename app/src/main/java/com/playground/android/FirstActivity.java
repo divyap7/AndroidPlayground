@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class FirstActivity extends AppCompatActivity {
 
@@ -17,10 +19,12 @@ public class FirstActivity extends AppCompatActivity {
         Log.wtf(tag, "In the onCreate() event");
 
         View button = findViewById(R.id.button);
+        final TextView editText= findViewById(R.id.editText4);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+                intent.putExtra("Text",editText.getText().toString());
                 startActivity(intent);
             }
         });

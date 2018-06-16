@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/showcount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Text_view"
@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.3" />
 
     <Button
-        android:id="@+id/button31"
+        android:id="@+id/random"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -34,13 +34,13 @@
         android:background="@color/buttonBackground"
         android:text="@string/Random_Button"
         android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/button33"
+        app:layout_constraintBottom_toBottomOf="@+id/count"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button33" />
+        app:layout_constraintStart_toEndOf="@+id/count" />
 
     <Button
-        android:id="@+id/button32"
+        android:id="@+id/toast"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
@@ -53,14 +53,14 @@
         android:text="@string/Toast_Button"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button33"
+        app:layout_constraintEnd_toStartOf="@+id/count"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/showcount" />
 
     <Button
-        android:id="@+id/button33"
+        android:id="@+id/count"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -70,8 +70,8 @@
         android:background="@color/buttonBackground"
         android:text="@string/Count_Button"
         android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/button32"
-        app:layout_constraintEnd_toStartOf="@+id/button31"
+        app:layout_constraintBottom_toBottomOf="@+id/toast"
+        app:layout_constraintEnd_toStartOf="@+id/random"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button32" />
+        app:layout_constraintStart_toEndOf="@+id/toast" />
 </android.support.constraint.ConstraintLayout>

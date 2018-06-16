@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">AndroidPlayground</string>
     <string name="Button">Button</string>
+    <string name="Toast_Button">Toast</string>
+    <string name="Count_Button">Count</string>
+    <string name="Random_Button">Random</string>
     <string name="Edit_text">Input</string>
-    <string name="Text_view">TextView</string>
+    <string name="Text_view">0</string>
     <string name="Image_view">ImageView</string>
+    <string name="Text_view1">Random Number :</string>
+    <string name="Text_view2">R</string>
+
 </resources>

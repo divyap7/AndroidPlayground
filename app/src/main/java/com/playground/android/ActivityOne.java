@@ -1,5 +1,6 @@
 package com.playground.android;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,6 +21,7 @@ public class ActivityOne extends AppCompatActivity {
 
         View toast = findViewById(R.id.toast);
         View count = findViewById(R.id.count);
+        View random = findViewById(R.id.random);
         final TextView showCount = findViewById(R.id.showcount);
 
         toast.setOnClickListener(new View.OnClickListener() {
@@ -54,12 +56,24 @@ public class ActivityOne extends AppCompatActivity {
             }
         });
 
+        random.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityOne.this, ActivityTwo.class);
+                String strCount = showCount.getText().toString();
+                int saveCount = Integer.parseInt(strCount);
+                intent.putExtra("Count", saveCount);
+                startActivity(intent);
+            }
+        });
+
 
     }
 
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putString("savedCount", displayCount);
+
     }
 
 

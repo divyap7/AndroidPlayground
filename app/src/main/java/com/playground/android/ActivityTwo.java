@@ -7,24 +7,26 @@ import android.widget.TextView;
 import java.util.Random;
 
 public class ActivityTwo extends AppCompatActivity {
-    private TextView randomView;
+    private TextView textViewRandomNumber;
     String randomCount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_two);
-        displayRandomNumber();
+
 
         if (savedInstanceState != null) {
             randomCount = savedInstanceState.getString("randomCount");
-            randomView.setText(randomCount);
+            textViewRandomNumber.setText(randomCount);
         }
+
+        displayRandomNumber();
     }
 
 
     public void displayRandomNumber() {
-        randomView = findViewById(R.id.randomview);
+        textViewRandomNumber = findViewById(R.id.randomview);
         int count = getIntent().getIntExtra("Count", 0);
         Random random = new Random();
         int randomValue = 0;
@@ -32,7 +34,7 @@ public class ActivityTwo extends AppCompatActivity {
             randomValue = random.nextInt(count);
         }
         randomCount = Integer.toString(randomValue);
-        randomView.setText(randomCount);
+        textViewRandomNumber.setText(randomCount);
 
 
     }

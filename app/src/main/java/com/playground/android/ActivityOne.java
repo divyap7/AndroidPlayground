@@ -1,7 +1,6 @@
 package com.playground.android;
 
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +10,10 @@ import android.widget.Toast;
 public class ActivityOne extends AppCompatActivity {
 
     String displayCount;
-
+    TextView textViewShowCount;
+    View buttonRandom;
+    View buttonCount;
+    View buttonToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,12 +21,12 @@ public class ActivityOne extends AppCompatActivity {
 
         setContentView(R.layout.activity_one);
 
-        View toast = findViewById(R.id.toast);
-        View count = findViewById(R.id.count);
-        View random = findViewById(R.id.random);
-        final TextView showCount = findViewById(R.id.showcount);
+        buttonToast = findViewById(R.id.toast);
+        buttonCount = findViewById(R.id.count);
+        buttonRandom = findViewById(R.id.random);
+        textViewShowCount = findViewById(R.id.showcount);
 
-        toast.setOnClickListener(new View.OnClickListener() {
+        buttonToast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(ActivityOne.this, "Hey dude!", Toast.LENGTH_SHORT).show();
@@ -32,41 +34,31 @@ public class ActivityOne extends AppCompatActivity {
         });
         if (savedInstanceState != null) {
             displayCount = savedInstanceState.getString("savedCount");
-            showCount.setText(displayCount);
-            count.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    String number = showCount.getText().toString();
-                    Integer count = Integer.parseInt(number);
-                    count++;
-                    displayCount = count.toString();
-                    showCount.setText(displayCount);
-                }
-            });
+            textViewShowCount.setText(displayCount);
+
         }
 
-        count.setOnClickListener(new View.OnClickListener() {
+        buttonCount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String number = showCount.getText().toString();
+                String number = textViewShowCount.getText().toString();
                 Integer count = Integer.parseInt(number);
                 count++;
                 displayCount = count.toString();
-                showCount.setText(displayCount);
+                textViewShowCount.setText(displayCount);
             }
         });
 
-        random.setOnClickListener(new View.OnClickListener() {
+        buttonRandom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ActivityOne.this, ActivityTwo.class);
-                String strCount = showCount.getText().toString();
+                String strCount = textViewShowCount.getText().toString();
                 int saveCount = Integer.parseInt(strCount);
                 intent.putExtra("Count", saveCount);
                 startActivity(intent);
             }
         });
-
 
     }
 
@@ -75,6 +67,5 @@ public class ActivityOne extends AppCompatActivity {
         outState.putString("savedCount", displayCount);
 
     }
-
 
 }

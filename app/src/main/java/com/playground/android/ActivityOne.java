@@ -1,6 +1,8 @@
 package com.playground.android;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +16,7 @@ public class ActivityOne extends AppCompatActivity {
     View buttonRandom;
     View buttonCount;
     View buttonToast;
+    SharedPreferences sharedPref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,13 @@ public class ActivityOne extends AppCompatActivity {
 
         }
 
+        sharedPref = getSharedPreferences("myPreference", Context.MODE_PRIVATE);
+        displayCount = sharedPref.getString("countValue", "");
+        if (!displayCount.equals("")) {
+            textViewShowCount.setText(displayCount);
+        }
+
+
         buttonCount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,8 +56,12 @@ public class ActivityOne extends AppCompatActivity {
                 count++;
                 displayCount = count.toString();
                 textViewShowCount.setText(displayCount);
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putString("countValue", displayCount);
+                editor.apply();
             }
         });
+
 
         buttonRandom.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -3,22 +3,21 @@
     android:shape="rectangle">
 
     <stroke
-        android:width="3dp"
+        android:width="2dp"
         android:color="#000000"
-        android:dashGap="0dp"
-        android:dashWidth="5dp" />
+        android:dashGap="2dp"
+        android:dashWidth="25dp" />
 
     <padding
-        android:bottom="10dp"
+        android:bottom="20dp"
         android:left="10dp"
         android:right="10dp"
         android:top="10dp" />
 
-    <corners android:radius="4dp" />
 
     <size
         android:width="100dp"
-        android:height="50dp"/>
+        android:height="100dp" />
 
 
 </shape>

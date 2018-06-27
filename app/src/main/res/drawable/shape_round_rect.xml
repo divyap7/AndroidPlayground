@@ -4,7 +4,7 @@
 
     <stroke
         android:width="3dp"
-        android:color="#000000"
+        android:color="@color/buttonBackground"
         android:dashGap="0dp"
         android:dashWidth="5dp" />
 
@@ -18,7 +18,12 @@
 
     <size
         android:width="100dp"
-        android:height="50dp"/>
+        android:height="150dp" />
+
+    <corners android:radius="20dp" />
+
+    <solid
+        android:color="@color/buttonBackground"/>
 
 
 </shape>

@@ -9,5 +9,6 @@
     <string name="Image_view">ImageView</string>
     <string name="Text_view1">Random Number :</string>
     <string name="Text_view2">R</string>
+    <string name="Switch">Switch</string>
 
 </resources>

@@ -15,18 +15,17 @@
         <activity android:name=".ActivityTwo" />
         <activity android:name=".SeekBarActivity" />
         <activity android:name=".Shape" />
-        <activity android:name=".Activity_progressBar_Switch"></activity>
-        <activity android:name=".Activity_progressBar_Button">
-
-        </activity>
-        <activity android:name=".activity_webView">
+        <activity android:name=".Activity_progressBar_Switch" />
+        <activity android:name=".Activity_progressBar_Button" />
+        <activity android:name=".activity_webView"></activity>
+        <activity android:name=".FragmentActivityOne">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity android:name=".FragmentActivityTwo"></activity>
     </application>
 
 </manifest>

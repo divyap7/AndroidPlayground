@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">AndroidPlayground</string>
     <string name="Button">Button</string>
+    <string name="ButtonA">Click A</string>
+    <string name="ButtonB">Click B</string>
+    <string name="ButtonC">Click C</string>
     <string name="Toast_Button">Toast</string>
     <string name="Count_Button">Count</string>
     <string name="Random_Button">Random</string>
@@ -10,5 +13,8 @@
     <string name="Text_view1">Random Number :</string>
     <string name="Text_view2">R</string>
     <string name="Switch">Switch</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
